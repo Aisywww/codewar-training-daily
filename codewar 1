@@ -1,0 +1,47 @@
+# day 1 codewar
+
+def count(x,n):
+    y =[]
+    tt = x
+    while n > 0:
+        y.append(tt)
+        tt += x
+        n -= 1
+    return y
+print(count(1,5))
+
+def count(x,n):
+    y = []
+    for i in range(1,n+1):
+      num = i * x
+      y.append(num)
+    return y
+print(count(4,5))
+
+def find_smallest_int(arr):
+    return min(arr)               #can also use sort fuction then print index[0] cause sort sort function by its value
+print(find_smallest_int([1,2,-111,2334,234]))
+
+
+def paperwork(n,m):
+    if n < 0 or m < 0:
+       total = 0
+       return total
+    elif n > 0 :
+        total = m*n
+        return total
+
+print(paperwork(5,-5))
+
+
+
+def paperwork(n,m):
+
+    if n >= 0 and m >= 0 :
+        total = m*n
+        return total
+    elif n <= 0 or m <= 0:
+        total = 0
+        return total
+
+print(paperwork(5,0))
